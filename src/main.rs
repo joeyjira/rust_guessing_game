@@ -1,6 +1,6 @@
 // bring io(input/output) library into scope
 // io library comes from standard library(std)
-use std::io
+use std::io;
 
 fn main() {
     // println! is a macro that prints a string to screen
