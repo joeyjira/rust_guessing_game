@@ -1,12 +1,22 @@
+// lets Rust know we'll be using "rand" as external dependency
+extern crate rand;
+
 // this project is a binary crate, which is an excutable
 // The "rand" crate is a library crate, which contains code intended to be used in other programs
 // bring io(input/output) library into scope
 // io library comes from standard library(std)
 use std::io;
+// "Rng" is a trait that defines methods that random number generators implement
+// this trait must be in scope for us to use those methods
+use rand::Rng;
 
 fn main() {
     // println! is a macro that prints a string to screen
     println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(1,101);
+
+    println!("The secret number is: {}", secret_number);
 
     println!("Please input your guess.");
 
