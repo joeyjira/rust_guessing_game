@@ -1,3 +1,5 @@
+// this project is a binary crate, which is an excutable
+// The "rand" crate is a library crate, which contains code intended to be used in other programs
 // bring io(input/output) library into scope
 // io library comes from standard library(std)
 use std::io;
